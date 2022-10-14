@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="https://kit.fontawesome.com/6fcb53b6d1.js" crossorigin="anonymous"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link rel="stylesheet" href="css/main.min.css" />
+        <title>Jownsu</title>
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="container">
+                <div class="navigation__logo">
+                    <img src="images/jownsu.png" alt="jownsu" class="navigation__logo-img" />
+                    <p class="navigation__logo-name">Jownsu</p>
+                </div>
+                <div class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#home" class="navigation__link">Home</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#about" class="navigation__link">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#project" class="navigation__link">Projects</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contact" class="navigation__link">Contact</a>
+                        </li>
+                    </ul>
+                    <div id="ham" class="ham"><div id="hamBar" class="hamBar"></div></div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <header class="header" id="home">
+                <div class="intro-box">
+                    <div class="heading-box">
+                        <h1 class="heading-box__title-lg">Hello, I'm Jhones Digno</h1>
+                        <p class="heading-box__info">
+                            A Frontend Web Developer building the Frontend of Websites and Web Applications that leads to the success
+                            of the overall product
+                        </p>
+                        <a href="#project" class="btn btn--primary">Projects</a>
+                    </div>
+                </div>
+                <lottie-player
+                class="header__down"
+                src="https://assets9.lottiefiles.com/packages/lf20_yztzkilv.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                ></lottie-player>
+            </header>
+
+            <section class="about-section" id="about">
+                <div class="container">
+                    <div class="heading-box">
+                        <h2 class="heading-box__title title-highlight">About Me</h2>
+                        <p class="heading-box__info">
+                        Here you will find more information about me, what I do, and my current skills mostly in terms of
+                        programming and technology
+                        </p>
+                    </div>
+                    <div class="about">
+                        <div class="me">
+                            <h3 class="me__title">Get to know me!</h3>
+                            <p class="me__info">
+                                I'm <b>Jhones Digno</b>, from Caloocan City. I am a fresh graduate of <b>Computer Science</b> at <b>University of Caloocan City.</b> I also trained web development at <b>Village 88 Inc.</b>
+                            </p>
+                            <p class="me__info">
+                                I want to become a full stack web developer. But after learning both sides, I decided to focus on front end development first and gain work experience.
+                            </p>
+                            <p class="me__info">
+                                I'm open for <b>Job</b> opportunities where I can contribute, learn and grow. If you have a good
+                                opportunity that matches my skills then don't hesitate to <b>contact</b> me.
+                            </p>
+                            <a href="#contact" class="btn btn--primary _mt-3">Contact</a>
+                        </div>
+                        <div class="my-skills">
+                            <h3 class="my-skills__title">My Skills</h3>
+                            <div class="skills">
+                                <span class="skills__name">HTML</span>
+                                <span class="skills__name">CSS</span>
+                                <span class="skills__name">Javascript</span>
+                                <span class="skills__name">PHP</span>
+                                <span class="skills__name">MySQL</span>
+                                <span class="skills__name">Sass</span>
+                                <span class="skills__name">JQuery</span>
+                                <span class="skills__name">React</span>
+                                <span class="skills__name">React Native</span>
+                                <span class="skills__name">Laravel</span>
+                                <span class="skills__name">Code Igniter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project-section" id="project">
+                <div class="container">
+                    <div class="heading-box">
+                        <h2 class="heading-box__title title-highlight">Projects</h2>
+                        <p class="heading-box__info">
+                        Here you will find some of the personal and clients projects that I created with each project containing
+                        its own case study
+                        </p>
+                    </div>
+
+                    <div class="project reveal">
+                        <a href="https://genshin-db.vercel.app" target="_blank" class="project__img">
+                            <img src="images/genshin-db.png" alt="proj" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Genshin.DB</h3>
+                            <p class="project__description">
+                                Genshin.DB is a genshin impact website that has archive of characters and guides. It is a clone of genshin.gg with some extra components and has home.
+                            </p>
+                            <div class="project__techs">
+                                <p>React</p>
+                                <p>SASS</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/jownsu/genshin-db" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://genshin-db.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project reveal">
+                        <a href="https://youtu.be/NbdsbAiwp48" target="_blank" class="project__img">
+                            <img src="images/izipc.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Izi PC - E-commerce</h3>
+                            <p class="project__description">
+                                Izi PC is an E-commerce of computer parts. User can browse different items and add it to their cart. It has also have a admin that can maniputate the products. This project is my capstone project in Village 88 training that I've made in just 2 weeks.
+                            </p>
+                            <div class="project__techs">
+                                <p>JQuery</p>
+                                <p>Bootstrap</p>
+                                <p>Code Igniter</p>
+                                <p>MySQL</p>
+                                <p>Stripe</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/jownsu/izi-pc-ecommerce" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://youtu.be/NbdsbAiwp48" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project reveal">
+                        <a href="https://youtu.be/hEa1ro2hEZk" target="_blank" class="project__img">
+                            <img src="images/fiply.png" alt="proj" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Fiply - Find and Apply</h3>
+                            <p class="project__description">
+                                Fiply is a job hiring social media accessible to all aspiring applicants and companies. It has an interview scheduler available both in website and mobile app. 
+                                Fiply also offers resume builder for all job seekers that want to easily build resume using the preset resume templates on website. While in mobile app offers a document scanner that allow users to crop, filter, and save images as PDFs.
+                            </p>
+                            <div class="project__techs">
+                                <p>React</p>
+                                <p>React Native</p>
+                                <p>Laravel</p>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/jownsu/laravel-fiply-api" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://github.com/jownsu/react-native-fiply" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://youtu.be/hEa1ro2hEZk" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project reveal">
+                        <a href="https://genshin-archive.000webhostapp.com/api/" target="_blank" class="project__img">
+                            <img src="images/genshin-api.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Genshin Impact API</h3>
+                            <p class="project__description">
+                                Genshin Impact API consists list of data of characters, weapons, artifacts and consumables. It is made of native PHP with OOP paradigm. Use GET request to fetch the JSON data.
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>PHP</p>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/jownsu/Genshin-Impact-API" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://genshin-archive.000webhostapp.com/api/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+           
+                            <!-- <a href="#" class="btn btn--primary btn--small">View</a> -->
+                        </div>
+                    </div>
+
+
+
+
+
+   
+<!-- 
+                    <div class="project">
+                        <a href="/" target="_blank" class="project__img">
+                            <img src="images/loopstudio.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Loop Studios Landing Page</h3>
+                            <p class="project__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam repudiandae officiis
+                                deleniti architecto! Quod odit officiis accusantium esse voluptatum inventore repudiandae corporis
+                                nam ipsam!
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+ 
+                    <div class="project">
+                        <a href="/" target="_blank" class="project__img">
+                            <img src="images/sunnyside.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Sunny Side Landing Page</h3>
+                            <p class="project__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam repudiandae officiis
+                                deleniti architecto! Quod odit officiis accusantium esse voluptatum inventore repudiandae corporis
+                                nam ipsam!
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <a href="/" target="_blank" class="project__img">
+                            <img src="images/easybank.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Easy Bank Landing Page</h3>
+                            <p class="project__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam repudiandae officiis
+                                deleniti architecto! Quod odit officiis accusantium esse voluptatum inventore repudiandae corporis
+                                nam ipsam!
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <a href="/" target="_blank" class="project__img">
+                            <img src="images/fylo.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Fylo Landing Page</h3>
+                            <p class="project__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam repudiandae officiis
+                                deleniti architecto! Quod odit officiis accusantium esse voluptatum inventore repudiandae corporis
+                                nam ipsam!
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <a href="/" target="_blank" class="project__img">
+                            <img src="images/glozzy.png" alt="proj" class="project__img" />
+                        </a>
+                        <div class="project__info">
+                            <h3 class="project__title">Glozzy Landing Page</h3>
+                            <p class="project__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus veniam repudiandae officiis
+                                deleniti architecto! Quod odit officiis accusantium esse voluptatum inventore repudiandae corporis
+                                nam ipsam!
+                            </p>
+                            <div class="project__techs">
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>Javascript</p>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="project__links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <div class="heading-box _mb-7">
+                        <h2 class="heading-box__title title-highlight">Contact</h2>
+                        <p class="heading-box__info">
+                            Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+                        </p>
+                    </div>
+
+                    <div class="contact">
+                        <div class="contact__form">
+                            <form action="#" class="form">
+                                <div class="form__group">
+                                    <input type="text" class="form__input" id="name" placeholder="Enter Your Name" required />
+                                    <label for="name" class="form__label">Enter Your Name</label>
+                                </div>
+                                <div class="form__group">
+                                    <input type="email" class="form__input" id="email" placeholder="Enter Your Email" required />
+                                    <label for="email" class="form__label">Enter Your Email</label>
+                                </div>
+                                <div class="form__group">
+                                    <textarea
+                                    type="text"
+                                    class="form__input"
+                                    id="message"
+                                    placeholder="Enter Your Message"
+                                    rows="5"
+                                    required
+                                    ></textarea>
+                                    <label for="message" class="form__label">Enter Your Message</label>
+                                </div>
+                                <a href="#" class="btn btn--primary">Submit</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer-info">
+                        <h3 class="footer__title">Jhones Digno</h3>
+                        <p class="footer__description">
+                            A Frontend Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
+                        </p>
+                    </div>
+                    <div class="footer-social">
+                        <h3 class="footer__title">Social</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                            <a href="https://www.linkedin.com/in/jhones-digno-866904213/" target="_blank" class="footer__link"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li class="footer__item">
+                            <a href="https://www.facebook.com/jownsu" target="_blank" class="footer__link"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="footer__item">
+                            <a href="https://www.instagram.com/jownsu/" target="_blank" class="footer__link"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copyright">© Copyright 2022. Made by <b>Jhones Digno</b></p>
+        </footer>
+        <script src="./index.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </body>
+</html>

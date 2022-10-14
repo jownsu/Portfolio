@@ -1,0 +1,68 @@
+.about {
+    display: flex;
+    gap: 10rem;
+  
+    @media only screen and (max-width: $bp-medium) {
+        gap: 5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.me {
+    flex: 0 0 50%;
+  
+    &__title {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 2rem;
+        }
+    }
+  
+    &__info {
+        font-size: 1.6rem;
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__info:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+}
+  
+    .my-skills {
+        &__title {
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2rem;
+            }
+        }
+    }
+  
+.skills {
+    &__name {
+        display: inline-block;
+        font-size: 2rem;
+        background: $color-black-3;
+        border-radius: 5px;
+        padding: 1rem 2.5rem;
+        margin: 0.5rem;
+        cursor: default;
+        transition: all 0.3s ease;
+        @media only screen and (max-width: $bp-medium) {
+            background: $color-black-4;
+            padding: 1rem 4rem;
+            font-size: 1.8rem;
+        }
+        &:hover,
+        &:active {
+            background: $color-primary;
+            color: $color-black;
+            transform: translateY(-0.3rem) scale(1.1);
+        }
+    }
+}

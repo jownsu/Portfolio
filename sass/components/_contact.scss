@@ -1,0 +1,64 @@
+.form {
+    background-color: $color-black-3;
+    padding: 5rem;
+    max-width: 85rem;
+    margin: 0 auto;
+  
+    @media only screen and (max-width: $bp-medium) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 2rem;
+    }
+  
+    &__group {
+        margin-bottom: 1rem;
+    }
+  
+    &__input {
+        font-family: inherit;
+        color: $color-white;
+        background-color: $color-grey-dark-3;
+        font-size: 2rem;
+        padding: 1.5rem 2rem;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        display: block;
+
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+        }
+
+        &:focus {
+            outline: none;
+            border-bottom: 3px solid $color-primary;
+        }
+    }
+  
+    &__label {
+        display: block;
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 1.4rem;
+        transition: all 0.2s ease;
+        text-align: start;
+    }
+  
+    &__input:placeholder-shown ~ &__label {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+  
+    & .btn {
+        margin-top: 2rem;
+        @media only screen and (max-width: $bp-medium) {
+            width: 50%;
+            text-align: center;
+        }
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+    }
+}

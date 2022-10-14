@@ -1,0 +1,25 @@
+.header {
+    height: 100vh;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgba($color-black, 0.8), rgba($color-black, 0.6)),
+      url('../../images/bg.svg');
+  
+    &__down {
+        position: absolute;
+        height: 7rem;
+        width: 7rem;
+        bottom: 3rem;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+}
+  
+.intro-box {
+    @include absolute-center();
+
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 0 2rem;
+}

@@ -1,0 +1,77 @@
+//COLORS
+
+$color-primary: #fec921;
+$color-primary-light: #fdd552;
+$color-primary-dark: #feca21b9;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+$color-white: #fff;
+$color-black: #000;
+$color-black-1: #111111;
+$color-black-2: #1e1e1e;
+$color-black-3: #3c3c3c;
+$color-black-4: #4d4d4d;
+
+//FONT
+$default-font-size: 1.6rem;
+$small-font-size: 1.2rem;
+$medium-font-size: 4rem;
+
+$big-font-size: 4rem;
+$huge-font-size: 6rem;
+
+//BREAKPOINTS
+
+$bp-largest: 1200px;
+$bp-large: 1100px;
+$bp-medium: 900px;
+$bp-small: 600px;
+$bp-smallest: 500px;
+
+//MIXINS
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; // 1 rem == 10px
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-white;
+    box-sizing: border-box;
+    background: $color-grey-dark-3;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}

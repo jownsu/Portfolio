@@ -1,0 +1,41 @@
+.project {
+    border: 1px solid lime;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    margin-bottom: 7rem;
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+  
+    &__info {
+        flex: 0 0 50%;
+        & .heading-box {
+            text-align: start;
+            @media only screen and (max-width: $bp-medium) {
+                text-align: center;
+            }
+        }
+    }
+
+    &__img {
+      width: 60%;
+    }
+  
+    &:nth-child(odd) &__img {
+        order: 1;
+        @media only screen and (max-width: $bp-medium) {
+            order: 0;
+        }
+    }
+  
+    &:nth-child(odd) .project__info .heading-box,
+    &:nth-child(odd) .project__info {
+        text-align: end;
+        @media only screen and (max-width: $bp-medium) {
+            text-align: center;
+        }
+    }
+}

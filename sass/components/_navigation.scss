@@ -1,0 +1,187 @@
+.navigation {
+    padding: 2rem 0;
+    background-color: rgba($color-black, 0.3);
+    box-shadow: 0 1rem 10rem 1rem rgba($color-black, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+
+    @media only screen and (max-width: $bp-small) {
+        position: fixed;
+        z-index: 5000;
+        width: 100%;
+        transition: .2s ease;
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 1em;
+            height: 100%;
+        }
+
+        &__list {
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            left: 100%;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgb(32, 32, 32);
+            transition: .5s ease left;
+            gap: 2rem;
+
+            &.active {
+                left: 0;
+
+            }
+        }
+    }
+  
+    & .container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+  
+    &__logo {
+        display: flex;
+        align-items: center;
+
+        &-img {
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            margin-right: 2rem;
+        }
+
+        &-name {
+            font-size: 2.5rem;
+            font-weight: 600;
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 2rem;
+            }
+        }
+    }
+  
+    &__list {
+        list-style-type: none;
+        // @media only screen and (max-width: $bp-small) {
+        //     display: none;
+        // }
+    }
+  
+    &__item {
+        display: inline-block;
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 2.5rem;
+
+            @media only screen and (max-width: $bp-small) {
+                margin: 0;
+            }
+        }
+
+    }
+  
+    &__link,
+    &__link:link,
+    &__link:visited {
+        color: $color-white;
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        
+        @media only screen and (max-width: $bp-medium) {
+            font-size: 1.4rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2.7rem;
+            padding: 0 2rem;
+        }
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        &:hover::after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            border-radius: 15px;
+            background-color: $color-primary;
+            bottom: -0.8rem;
+            left: 0;
+            opacity: 0;
+            transition: all 0.4s ease;
+            transform: scale(0);
+        }
+    }
+
+    &__nav {
+
+        @media only screen and (max-width: $bp-small) {
+            .ham {
+                height: 50px;
+                width: 50px;
+                border: 2px white solid;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                z-index: 100;  
+
+                .hamBar {
+                    position: relative;
+                    height: 2px;
+                    width: 25px;
+                    background: white;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 2px;
+                        width: 25px;
+                        background: white;
+                    
+                        transition: .3s ease;
+                    }
+
+                    &::before {
+                        top: 7px;
+                    }
+
+                    &::after {
+                        top: -7px;
+                    }
+
+                    
+                    &.active::before,
+                    &.active::after{
+                        top: 0;
+                    }
+                }
+                
+            }
+
+
+        }
+    }
+
+
+}
