@@ -40,7 +40,6 @@ a.forEach(item => item.addEventListener('click', function(){
   
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
-    console.log(reveals[0])
 
     for (var i = 0; i < reveals.length; i++) {
       var windowheight = window.innerHeight;
@@ -53,4 +52,48 @@ a.forEach(item => item.addEventListener('click', function(){
       }
     }
   }
+
+  //FORM VALIDATION
+  const form = document.querySelector('form');
+  const name = document.querySelector('#name');
+  const email = document.querySelector('#email');
+  const message = document.querySelector('#message');
+  
+  const name_error = document.querySelector('#name-error');
+  const email_error = document.querySelector('#email-error');
+  const message_error = document.querySelector('#message-error');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let hasError = false;
+    if(name.value.trim() === ''){
+        name_error.innerHTML = 'Name cannot be empty';
+        hasError = true;
+    }
+    if(email.value.trim() === ''){
+        email_error.innerHTML = 'Email cannot be empty';
+        hasError = true;
+    }
+
+    if(email.value.split('@')[1] == null){
+        email_error.innerHTML = 'Email is invalid';
+        hasError = true;
+    }
+    else if(email.value.split('@')[1].split('.')[1] == null){
+        email_error.innerHTML = 'Email is invalid';
+        hasError = true;
+    }
+
+    if(message.value.trim() === ''){
+        message_error.innerHTML = 'Message cannot be empty';
+        hasError = true;
+    }
+
+    if(!hasError){
+        e.target.submit();
+    }
+
+  });
+
+
 })
